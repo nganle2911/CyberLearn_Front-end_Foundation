@@ -141,6 +141,12 @@ html, body {
     color: #ff4f81;
 }
 
+.nav-instruction .navbar-toggler {
+    color: #ff4f81;
+    border-radius: 0;
+    background-color: black;
+}
+
 /* CAROUSEL */
 #carouselCyber .carousel-caption {
     /* This method is only applied for tag having position: absolute */
@@ -522,9 +528,38 @@ footer {
     color: white;
 }
 
+
 /* **************************** RESPONSIVE ******************************* */
 /* HEADER */
 /* Using max-width: big screens, then small screens */
+
+@media screen and (max-width:991.98px) { 
+    .nav-instruction .navbar-brand p:first-child {
+        font-size: 3vw;
+    }
+
+    .nav-instruction .navbar-brand p:last-child {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:767.98px) { /*smaller than 768px*/
+    #navbarInstruction .navbar-nav {
+        background-color: #eee;
+        text-align: center;
+    }
+
+    #navbarInstruction .dropdown-menu {
+        background-color: #e0e1e2;
+        border-color: #e0e1e2;
+        text-align: center;
+    }
+
+    #navbarInstruction .dropdown-item {
+        color: black;
+    }
+}
+
 @media screen and (max-width:575.98px) {
     .header__left a {
         display: block;
@@ -544,7 +579,19 @@ footer {
     .header__right a {
         margin-bottom: 5px;
     }
-
 }
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #navbarInstruction .nav-item {
+        margin: 0;
+        padding: 0 2px;
+    }
+    
+    #navbarInstruction .nav-link {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
 
 
