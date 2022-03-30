@@ -522,3 +522,29 @@ footer {
     color: white;
 }
 
+/* **************************** RESPONSIVE ******************************* */
+/* HEADER */
+/* Using max-width: big screens, then small screens */
+@media screen and (max-width:575.98px) {
+    .header__left a {
+        display: block;
+    }
+
+    .header__left a:last-child {
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .header__right {
+        width: 35%;
+        text-align: center;
+    }
+
+    .header__right a {
+        margin-bottom: 5px;
+    }
+
+}
+
+
