@@ -594,6 +594,20 @@ footer {
     }
 }
 
+@media screen and (max-width:415px) {
+    #carouselCyber {
+        height: 250px;
+    }
+
+    #carouselCyber .carousel-inner, #carouselCyber .carousel-item, #carouselCyber .carousel-item img {
+        height: 100%;
+    }
+
+    #carouselCyber .carousel-item img {
+        object-fit: cover;
+    }
+}
+
 @media screen and (max-width:320px) {
     .header__right {
         width: 35%;
