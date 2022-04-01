@@ -449,6 +449,8 @@ footer {
 
 .footer__link, .footer__contact {
     margin-bottom: 1rem;
+    display: flex; 
+    align-items: center;
 }
 
 .footer__link i {
@@ -600,6 +602,13 @@ footer {
 
     .header__left a:last-child {
         margin-left: 0 !important;
+    }
+
+    /* FOOTER */
+    .footer__form button, .footer__form input {
+        padding: 10px;
+        border: 0;
+        font-size: 14px;
     }
 }
 
