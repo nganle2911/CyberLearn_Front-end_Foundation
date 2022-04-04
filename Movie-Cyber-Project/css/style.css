@@ -107,8 +107,38 @@ header p {
     letter-spacing: 4px;
     color: white;
     background-image: linear-gradient(to right, #fbbd61, #ec7532);
+    position: relative;
+    overflow: hidden;
+    outline: none;
 }
 
+.movieCarousel__trailer button:hover {
+    color: white;
+}
+
+/* Step 1: Build overlay covers parent tag (button) */
+.movieCarousel__trailer button::before {
+    content: '';
+    width: 110%;
+    height: 100%;
+    background-color: #ec7532;
+    position: absolute; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    transform: skewX(30deg) translateX(-110%); /*not yet hover*/
+    transition: all .5s;
+} 
+
+.movieCarousel__trailer button:hover::before {
+    transform: skewX(30deg) translateX(-10px);
+}
+
+.movieCarousel__trailer button span {
+    position: relative;
+    z-index: 2;
+}
 
 /* NEW IN */
 /* SHOW TIME */
