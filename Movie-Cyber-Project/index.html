@@ -17,6 +17,9 @@
     <!-- BS4 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -24,13 +27,13 @@
     
     <!-- HEADER -->
     <header class="container">
-        <p class="bg-dark text-right text-white mb-0">
+        <p class="text-right text-white mb-0">
             <i class="fa-solid fa-phone"></i>
             <span class="mx-3 border-right pr-2">096.105.1014</span>
             <i class="fa fa-search"></i>
         </p>
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="logo">
             </a>
@@ -83,7 +86,7 @@
     <!-- CAROUSEL -->
     <section class="movieCarousel">
         <div id="carouselMovie" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <ol class="container carousel-indicators">
                 <li data-target="#carouselMovie" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselMovie" data-slide-to="1"></li>
                 <li data-target="#carouselMovie" data-slide-to="2"></li>
@@ -91,13 +94,14 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./img/hero-1.jpg" class="d-block w-100" alt="hero 1">
+                    <div class="movieCarousel__overlay"></div>
                     <div class="container carousel-caption d-none d-md-block">
                         <div class="col-9">
-                            <p>ACTION, ADVENTURE, FANTASY</p>
-                            <h2>End of the World: Part I</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia cumque totam adipisci laudantium cum ab
+                            <p class="animate__animated animate__fadeInDown">ACTION, ADVENTURE, FANTASY</p>
+                            <h2 class="animate__animated animate__fadeInDown">End of the World: Part I</h2>
+                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia cumque totam adipisci laudantium cum ab
                                 est in saepe nam.</p>
-                            <div class="movieCarousel__trailer">
+                            <div class="movieCarousel__trailer animate__animated animate__fadeInUp">
                                 <span>PG</span>
                                 <button class="btn">
                                     <span>
@@ -111,13 +115,14 @@
                 </div>
                 <div class="carousel-item">
                     <img src="./img/hero-2.jpg" class="d-block w-100" alt="hero 2">
+                    <div class="movieCarousel__overlay"></div>
                     <div class="container carousel-caption d-none d-md-block">
                         <div class="col-9">
-                            <p>ACTION, ADVENTURE, FANTASY</p>
-                            <h2>End of the World: Part II</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia cumque totam adipisci laudantium cum ab
+                            <p class="animate__animated animate__fadeInDown">ACTION, ADVENTURE, FANTASY</p>
+                            <h2 class="animate__animated animate__fadeInDown">End of the World: Part II</h2>
+                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia cumque totam adipisci laudantium cum ab
                                 est in saepe nam.</p>
-                            <div class="movieCarousel__trailer">
+                            <div class="movieCarousel__trailer animate__animated animate__fadeInUp">
                                 <span>PG</span>
                                 <button class="btn">
                                     <span>
@@ -131,13 +136,14 @@
                 </div>
                 <div class="carousel-item">
                     <img src="./img/hero-3.jpg" class="d-block w-100" alt="hero 3">
+                    <div class="movieCarousel__overlay"></div>
                     <div class="container carousel-caption d-none d-md-block">
                         <div class="col-9">
-                            <p>ACTION, ADVENTURE, FANTASY</p>
-                            <h2>End of the World: Part III</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia cumque totam adipisci laudantium cum ab
+                            <p class="animate__animated animate__fadeInDown">ACTION, ADVENTURE, FANTASY</p>
+                            <h2 class="animate__animated animate__fadeInDown">End of the World: Part III</h2>
+                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia cumque totam adipisci laudantium cum ab
                                 est in saepe nam.</p>
-                            <div class="movieCarousel__trailer">
+                            <div class="movieCarousel__trailer animate__animated animate__fadeInUp">
                                 <span>PG</span>
                                 <button class="btn">
                                     <span>

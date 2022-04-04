@@ -41,6 +41,14 @@ html, body {
 }
 
 /* HEADER */
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
 header p {
     font-size: 14px;
     font-weight: 700;
@@ -59,7 +67,7 @@ header p {
 
 /* CAROUSEL */
 #carouselMovie .carousel-item .carousel-caption {
-    top: 50%; 
+    top: 55%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -72,6 +80,7 @@ header p {
     font-size: 0.875rem;
     letter-spacing: 2px;
     margin: 0;
+    animation-delay: 0.5s;
 }
 
 /*  If we call p:last-child -> div will be called, not p
@@ -85,6 +94,10 @@ header p {
     font-size: 3.25rem;
     letter-spacing: 3px;
     margin-bottom: 10px;
+}
+
+.movieCarousel__trailer {
+    animation-delay: 0.5s;
 }
 
 .movieCarousel__trailer>span {
@@ -138,6 +151,41 @@ header p {
 .movieCarousel__trailer button span {
     position: relative;
     z-index: 2;
+}
+
+#carouselMovie .carousel-indicators {
+    justify-content: flex-start; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    bottom: 10%;
+}
+
+#carouselMovie .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+    opacity: 1;
+    box-sizing: border-box;
+    /* background-clip: border-box; */
+}
+
+#carouselMovie .carousel-indicators li.active {
+    background-color: white;
+}
+
+.movieCarousel__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black, transparent);
 }
 
 /* NEW IN */
