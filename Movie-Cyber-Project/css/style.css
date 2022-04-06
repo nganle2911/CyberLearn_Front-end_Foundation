@@ -305,6 +305,25 @@ header p {
 }
 
 /* SHOW TIME */
+.showTime .nav-tabs .nav-item.show .nav-link, .showTime .nav-tabs .nav-link.active {
+    border: none;
+}
+
+.showTime .nav-tabs .nav-link {
+    border: none;
+    padding: 0;
+}
+
+.showTime .nav-tabs .nav-link span {
+    padding: 15px 30px;
+    display: block;
+}
+
+.showTime .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+
 /* COMING SOON */
 /* MOVIE LIST */
 /* CONTACT */
