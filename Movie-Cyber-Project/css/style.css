@@ -309,9 +309,16 @@ header p {
     border: none;
 }
 
+.showTime .nav-tabs .nav-link.active {
+    color: #ec7532;
+}
+
 .showTime .nav-tabs .nav-link {
     border: none;
     padding: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4a4a4a;
 }
 
 .showTime .nav-tabs .nav-link span {
@@ -322,6 +329,71 @@ header p {
 .showTime .nav-tabs .nav-item {
     margin-bottom: 0;
 }
+
+.showTime__row {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#myTabContent .tab-pane .showTime__row:last-child {
+    border-bottom: none;
+}
+
+.showTime__row img {
+    border-radius: 10px;
+}
+
+.showTime__row div p:first-of-type {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ec7532;
+    margin-bottom: 0;
+}
+
+.showTime__row h3 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #101010;
+    letter-spacing: 1px;
+}
+
+.showTime__row a {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ec7532;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.showTime__row a:hover {
+    color: #101010;
+}
+
+.showTime__runningTime {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #4a4a4a;
+}
+
+.showTime__runningTime button {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #717171;
+    background-color: #d8d8d8;
+}
+
+.showTime__mins span:last-of-type {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    background-color: #4a4a4a;
+    text-align: center;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+
 
 
 /* COMING SOON */
