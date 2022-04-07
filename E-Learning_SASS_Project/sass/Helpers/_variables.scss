@@ -1,0 +1,56 @@
+// THIS FILE INCLUDES ALL VARIABLE DECLARATIONS
+// ************************************************************$
+
+// Color 
+$color-black-0: #29303b;
+$color-black-1: rgba(20, 23, 28, 0.1); 
+$color-black-light: #505763; 
+$color-grey-0: #686f7a;
+$color-grey-1: rgba(20, 23, 28, 0.05); 
+$color-grey-2: #dee2e6;
+$color-white-0: #fff;
+$color-white-cream: #f2f3f5;
+$color-red-0: #ec5252;
+$color-red-1: #521822; 
+$color-blue-0: #007791; 
+$color-yellow-0: #F4C150; 
+
+// Font-size 
+// We can calculate these below variables like in JS code
+$font-size-0: 15px; 
+$font-size-1: 13px;
+$font-size-2: 40px;
+$font-size-3: 18px; 
+$font-size-4: 36px; 
+$font-size-5: 24px; 
+
+// Font-weight 
+$font-weight-0: normal; 
+$font-weight-1: 600;
+$font-weight-2: 700; 
+
+// Line-height
+$line-height-0: 1.43;
+
+// Margin
+$margin-0: 5px; 
+$margin-1: 25px;
+$margin-2: 20px; 
+
+// Padding
+$padding-0: 10px; 
+$padding-1: 15px; 
+$padding-2: 5px;
+
+// Border-radius
+$border-radius-0: 2px; 
+
+// Breakpoints - screen's width 
+// Declare breakpoints as an array
+$breakpoints: (
+    'extra-large': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+) 
+
