@@ -10,6 +10,12 @@ html, body {
     color: #717171;
 }
 
+/* this property helps modify color when highlighting words */
+::selection {
+    background-color: #ec7532;
+    color: white;
+}
+
 /* Line style at navbar */
 .line::after {
     content: '';
@@ -100,6 +106,7 @@ header p {
     width: 100%;
     transform: translate(-50%, -100%);
     transition: transform 0.5s;
+    z-index: 16;
 }
 
 /* CAROUSEL */
@@ -455,6 +462,7 @@ header p {
     line-height: 80px;
     font-size: 25px;
     transition: 0.5s;
+    color: white;
 }
 
 .comingSoon__video:hover i {
@@ -488,4 +496,21 @@ header p {
 }
 
 /* CONTACT */
+.contact__content {
+    text-align: center;
+}
+
+.contact__content p:first-child {
+    font-size: 23px;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.contact__content a {
+    font-size: 46px;
+    color: #fbbd61;
+    text-decoration: none;
+}
+
 /* FOOTER */
