@@ -462,5 +462,30 @@ header p {
 }
 
 /* MOVIE LIST */
+.movieList {
+    background-color: #101010;
+}
+
+.movieList__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movieList__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.movieList__item:hover .movieList__overlay {
+    opacity: 0;
+}
+
 /* CONTACT */
 /* FOOTER */
