@@ -514,3 +514,41 @@ header p {
 }
 
 /* FOOTER */
+footer {
+    background-color: #101010;
+}
+
+footer h3 {
+    font-size: 16px;
+    color: #ec7532;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+footer li {
+    list-style: none;
+}  
+
+footer a {
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1.5px;
+    padding: 3px 0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #fbbd61;
+    text-decoration: none;
+}
+
+.footer__copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px 0;
+}
+
+.footer__copyright p {
+    margin-bottom: 0;
+}
