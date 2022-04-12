@@ -203,8 +203,8 @@ header p {
     transform: translateX(-50%);
     margin-right: 0;
     margin-left: 0;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     bottom: 10%;
 }
 
@@ -230,6 +230,32 @@ header p {
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, black, transparent);
+}
+
+#carouselMovie {
+    height: 650px;
+}
+
+#carouselMovie .carousel-inner {
+    height: 100%;
+}
+
+#carouselMovie .carousel-item {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#carouselMovie .carousel-item:first-child {
+    background-image: url(../img/hero-1.jpg);
+}
+
+#carouselMovie .carousel-item:nth-child(2) {
+    background-image: url(../img/hero-2.jpg);
+}
+
+#carouselMovie .carousel-item:nth-child(3) {
+    background-image: url(../img/hero-3.jpg);
 }
 
 /* NEW IN */
@@ -595,6 +621,11 @@ footer a:hover {
 
     #movieNavBar .navbar-nav .active .nav-link {
         color: #ec7532;
+    }
+
+    /* CAROUSEL */
+    #carouselMovie .carousel-item .carousel-caption h2 {
+        font-size: 2.5rem;
     }
 
     
