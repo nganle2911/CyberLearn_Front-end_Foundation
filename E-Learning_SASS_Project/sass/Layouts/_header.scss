@@ -1,0 +1,29 @@
+// Here is the CSS code 
+// .myNavbar .myNavbar__left {}
+
+.myNavbar {
+    .myNavbar__left {
+        display: flex;
+        align-items: center;
+        .navbar-brand {
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 0;
+            img {
+                width: 110px;
+            }
+        }
+        .myNavbar__categories {
+            flex-grow: 1;
+            text-align: center;
+            @include styleText($color-black-light, $font-size-1, $font-weight-0);
+            cursor: pointer;
+            i {
+                color: $color-grey-3;
+            }
+        }
+        .myNavbar__form-search {
+            flex-grow: 8;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+// NO PARAMETERS
+/* @mixin styleText {
+    color: white;
+    font-size: 13px;
+} */
+
+// HAVING PARAMETERS
+@mixin styleText($color, $font-size, $font-weight) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}

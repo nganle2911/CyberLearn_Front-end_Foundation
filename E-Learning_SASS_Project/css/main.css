@@ -1,3 +1,7 @@
+/* @mixin styleText {
+    color: white;
+    font-size: 13px;
+} */
 * {
   margin: 0;
   padding: 0;
@@ -9,5 +13,37 @@ body {
   line-height: 1.43;
   color: #29303b;
   background-color: #fff;
+}
+
+.myNavbar .myNavbar__left {
+  display: flex;
+  align-items: center;
+}
+
+.myNavbar .myNavbar__left .navbar-brand {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 0;
+}
+
+.myNavbar .myNavbar__left .navbar-brand img {
+  width: 110px;
+}
+
+.myNavbar .myNavbar__left .myNavbar__categories {
+  flex-grow: 1;
+  text-align: center;
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.myNavbar .myNavbar__left .myNavbar__categories i {
+  color: #a1a7b3;
+}
+
+.myNavbar .myNavbar__left .myNavbar__form-search {
+  flex-grow: 8;
 }
 /*# sourceMappingURL=main.css.map */
