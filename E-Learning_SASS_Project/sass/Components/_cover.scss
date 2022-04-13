@@ -1,0 +1,5 @@
+.cover {
+    background-image: url('../../img/cover.jpg');
+    @extend %backgroundImg; 
+}
+
