@@ -10,3 +10,19 @@
     font-size: $font-size;
     font-weight: $font-weight;
 }
+
+@mixin styleButton($color, $bg-color, $border-color, $font-size, $font-weight, $padding-y, $padding-x) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    padding: $padding-y $padding-x;
+    cursor: pointer;
+}
+
+@mixin hoverButton($color-hover, $bg-color-hover, $border-color-hover) {
+    color: $color-hover;
+    background-color: $bg-color-hover;
+    border: 1px solid $border-color-hover;
+}

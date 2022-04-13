@@ -70,4 +70,20 @@
             }
         }
     }
+    .myNavbar__right {
+        .navbar-nav {
+            justify-content: space-between;
+            align-items: center;
+            .nav-item {
+                .nav-link {
+                    @include styleText($color-black-light, $font-size-1, $font-weight-0);
+                }
+            }
+            .myNavbar__cart {
+                .nav-link {
+                    font-size: $font-size-3 + 2;
+                }
+            }
+        }
+    }
 }

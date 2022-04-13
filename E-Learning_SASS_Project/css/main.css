@@ -95,4 +95,51 @@ body {
   color: #fff;
   background-color: #ec5252;
 }
+
+.myNavbar .myNavbar__right .navbar-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myNavbar .myNavbar__right .navbar-nav .nav-item .nav-link {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.myNavbar .myNavbar__right .navbar-nav .myNavbar__cart .nav-link {
+  font-size: 20px;
+}
+
+.button--white {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #505763;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 12px;
+  cursor: pointer;
+}
+
+.button--white:hover {
+  color: #29303b;
+  background-color: transparent;
+  border: 1px solid #29303b;
+}
+
+.button--red {
+  color: #fff;
+  background-color: #ec5252;
+  border: 1px solid #ec5252;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 12px;
+  cursor: pointer;
+}
+
+.button--red:hover {
+  color: #fff;
+  background-color: #521822;
+  border: 1px solid #521822;
+}
 /*# sourceMappingURL=main.css.map */
