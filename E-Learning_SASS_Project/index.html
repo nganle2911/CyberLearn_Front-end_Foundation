@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -140,7 +144,196 @@
     </section>
 
     <!-- COURSES -->
-    <section class="courses"></section>
+    <section class="courses">
+        <div class="courses__content">
+            <div class="row">
+                <div class="col-4">
+                    <div class="courses__left">
+                        <h2>The world's largest selection of courses</h2>
+                        <p>Choose from over 80,000 online video courses with new additions published every month</p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="courses__right">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="dev-tab" data-toggle="tab" href="#dev" role="tab" aria-controls="home"
+                                    aria-selected="true">Development</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="design-tab" data-toggle="tab" href="#design" role="tab"
+                                    aria-controls="profile" aria-selected="false">Design</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="business-tab" data-toggle="tab" href="#business" role="tab"
+                                    aria-controls="contact" aria-selected="false">Business</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="it-tab" data-toggle="tab" href="#it" role="tab"
+                                    aria-controls="contact" aria-selected="false">IT</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal" role="tab"
+                                    aria-controls="contact" aria-selected="false">Personal</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="mkt-tab" data-toggle="tab" href="#mkt" role="tab"
+                                    aria-controls="contact" aria-selected="false">Marketing</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="photography-tab" data-toggle="tab" href="#photography" role="tab"
+                                    aria-controls="contact" aria-selected="false">Photography</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="dev" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="owl-carousel owl-theme courses__carousel">
+                                    <div class="card">
+                                        <img src="./img/kh1.jpg" class="card-img-top" alt="kh1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h5>
+                                            <p class="card-text">Colt Steele Ian Schoonover</p>
+                                            <div class="card__stars">
+                                                <span>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half"></i>
+                                                </span>
+                                                <span>4.6</span>
+                                                <span>(11.597)</span>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./img/kh2.jpg" class="card-img-top" alt="kh2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Learning Python for Data Analysis and Visualisation</h5>
+                                            <p class="card-text">Jose Portille</p>
+                                            <div class="card__stars">
+                                                <span>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half"></i>
+                                                </span>
+                                                <span>4.6</span>
+                                                <span>(11.597)</span>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./img/kh3.jpg" class="card-img-top" alt="kh3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Advanced CSS and SASS: Flexbox, Grid, Animation and More!</h5>
+                                            <p class="card-text">Jonas Schmedtmann</p>
+                                            <div class="card__stars">
+                                                <span>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half"></i>
+                                                </span>
+                                                <span>4.6</span>
+                                                <span>(11.597)</span>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./img/kh4.jpg" class="card-img-top" alt="kh4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Modern JavaScript From the Beginning</h5>
+                                            <p class="card-text">Brad Traversy</p>
+                                            <div class="card__stars">
+                                                <span>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half"></i>
+                                                </span>
+                                                <span>4.6</span>
+                                                <span>(11.597)</span>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./img/kh5.jpg" class="card-img-top" alt="kh5">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                            <p class="card-text">Brad Traversy</p>
+                                            <div class="card__stars">
+                                                <span>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half"></i>
+                                                </span>
+                                                <span>4.6</span>
+                                                <span>(11.597)</span>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./img/kh6.jpg" class="card-img-top" alt="kh6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp</h5>
+                                            <p class="card-text">Angela Yu</p>
+                                            <div class="card__stars">
+                                                <span>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half"></i>
+                                                </span>
+                                                <span>4.6</span>
+                                                <span>(11.597)</span>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>$179.99</span>
+                                                <span>$9.99</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="profile-tab">Design</div>
+                            <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="contact-tab">Business</div>
+                            <div class="tab-pane fade" id="it" role="tabpanel" aria-labelledby="contact-tab">IT</div>
+                            <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="contact-tab">Personal</div>
+                            <div class="tab-pane fade" id="mkt" role="tabpanel" aria-labelledby="contact-tab">Marketing</div>
+                            <div class="tab-pane fade" id="photography" role="tabpanel" aria-labelledby="contact-tab">Photography</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- VIEWING -->
     <section class="viewing"></section>
@@ -179,6 +372,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 
 </body>
 </html>
