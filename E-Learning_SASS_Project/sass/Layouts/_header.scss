@@ -35,57 +35,7 @@
 
         .myNavbar__form-search {
             flex-grow: 8;
-
-            .input-group {
-                background-color: $color-white-cream;
-
-                .form-control {
-                    background-color: transparent;
-                    border-color: transparent;
-                    box-shadow: none;
-                    transition: none;
-
-                    &::placeholder {
-                        color: $color-black-light;
-                    }
-
-                    &:focus {
-                        background-color: $color-white-0;
-                        border-top-color: $color-grey-4;
-                        border-bottom-color: $color-grey-4;
-                        border-left-color: $color-grey-4;
-                    }
-
-                    // + 
-                    &:focus+.input-group-append {
-                        .input-group-text {
-                            background-color: $color-white-0;
-                            border-top-color: $color-grey-4;
-                            border-bottom-color: $color-grey-4;
-                            border-right-color: $color-grey-4;
-
-                            &:hover {
-                                color: $color-white-0;
-                                background-color: $color-red-0;
-                            }
-                        }
-                    }
-                }
-
-                .input-group-append {
-                    .input-group-text {
-                        background-color: transparent;
-                        border-color: transparent;
-                        color: $color-red-0;
-
-                        // & represents "parent selector" - input-group-text
-                        &:hover {
-                            color: $color-white-0;
-                            background-color: $color-red-0;
-                        }
-                    }
-                }
-            }
+            @include styleFormSearch($color-white-cream, $color-white-0, $color-grey-4);
         }
     }
 
