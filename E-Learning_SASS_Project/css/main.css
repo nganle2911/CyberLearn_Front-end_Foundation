@@ -530,6 +530,7 @@ body {
 
 .card--feedback {
   height: 280px;
+  margin-right: 1px;
 }
 
 .card--feedback .card-body {
