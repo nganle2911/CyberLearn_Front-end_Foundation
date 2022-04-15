@@ -344,7 +344,148 @@
 </section>
 
 <!-- VIEWING -->
-<section class="viewing"></section>
+<section class="viewing">
+    <div class="viewing__content">
+        <h5>Students are viewing</h5>
+        <div class="owl-carousel owl-theme viewing__carousel">
+            <div class="card">
+                <img src="./img/kh8.jpg" class="card-img-top" alt="kh8">
+                <div class="card-body">
+                    <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                        Expert</h5>
+                    <p class="card-text">Colt Steele Ian Schoonover</p>
+                    <div class="card__stars">
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.6</span>
+                        <span class="card__total">(11.597)</span>
+                    </div>
+                    <div class="card__price">
+                        <span>$179.99</span>
+                        <span>$9.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/kh9.jpg" class="card-img-top" alt="kh9">
+                <div class="card-body">
+                    <h5 class="card-title">Learning Python for Data Analysis and Visualisation</h5>
+                    <p class="card-text">Jose Portille</p>
+                    <div class="card__stars">
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.6</span>
+                        <span class="card__total">(11.597)</span>
+                    </div>
+                    <div class="card__price">
+                        <span>$179.99</span>
+                        <span>$9.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/kh10.jpg" class="card-img-top" alt="kh10">
+                <div class="card-body">
+                    <h5 class="card-title">Advanced CSS and SASS: Flexbox, Grid, Animation and More!
+                    </h5>
+                    <p class="card-text">Jonas Schmedtmann</p>
+                    <div class="card__stars">
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.6</span>
+                        <span class="card__total">(11.597)</span>
+                    </div>
+                    <div class="card__price">
+                        <span>$179.99</span>
+                        <span>$9.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/kh11.jpg" class="card-img-top" alt="kh11">
+                <div class="card-body">
+                    <h5 class="card-title">Modern JavaScript From the Beginning</h5>
+                    <p class="card-text">Brad Traversy</p>
+                    <div class="card__stars">
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.6</span>
+                        <span class="card__total">(11.597)</span>
+                    </div>
+                    <div class="card__price">
+                        <span>$179.99</span>
+                        <span>$9.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/kh12.jpg" class="card-img-top" alt="kh12">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                    <p class="card-text">Brad Traversy</p>
+                    <div class="card__stars">
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.6</span>
+                        <span class="card__total">(11.597)</span>
+                    </div>
+                    <div class="card__price">
+                        <span>$179.99</span>
+                        <span>$9.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/kh13.jpg" class="card-img-top" alt="kh13">
+                <div class="card-body">
+                    <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
+                        Bootcamp</h5>
+                    <p class="card-text">Angela Yu</p>
+                    <div class="card__stars">
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.6</span>
+                        <span class="card__total">(11.597)</span>
+                    </div>
+                    <div class="card__price">
+                        <span>$179.99</span>
+                        <span>$9.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- BANNER -->
 <section class="banner"></section>
@@ -398,6 +539,24 @@
             },
             1000: {
                 items: 4
+            }
+        }
+    });
+
+    $('.viewing__carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
             }
         }
     })

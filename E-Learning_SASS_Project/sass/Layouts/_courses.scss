@@ -5,36 +5,43 @@
         width: 90%;
         margin: auto;
 
-        .courses__left {
-            background-color: $color-grey-1;
-            padding: 0 2rem;
-            display: flex;
-            align-items: center;
+        .row {
+            margin-right: 0;
+            margin-left: 0;
 
-            h2 {
-                @include styleText($color-black-0, $font-size-3 + 1, $font-weight-0);
+            .courses__left {
+                background-color: $color-grey-1;
+                padding: 0 2rem;
+                display: flex;
+                align-items: center;
+    
+                h2 {
+                    @include styleText($color-black-0, $font-size-3 + 1, $font-weight-0);
+                }
             }
-        }
-
-        .courses__right {
-
-            #myTab {
-                margin-bottom: $margin-1;
-
-                .nav-link {
-                    @include styleText($color-black-0, $font-size-0, $font-weight-0);
-
-                    &:hover {
-                        border: 1px solid transparent;
-                        @include styleText($color-blue-0, $font-size-0, $font-weight-0);
-                    }
-
-                    &.active {
-                        border: none;
-                        border-bottom: 5px solid $color-blue-0;
+    
+            .courses__right {
+    
+                #myTab {
+                    margin-bottom: $margin-1;
+    
+                    .nav-link {
+                        @include styleText($color-black-0, $font-size-0, $font-weight-0);
+    
+                        &:hover {
+                            border: 1px solid transparent;
+                            @include styleText($color-blue-0, $font-size-0, $font-weight-0);
+                        }
+    
+                        &.active {
+                            border: none;
+                            border-bottom: 5px solid $color-blue-0;
+                        }
                     }
                 }
             }
         }
+
+       
     }
 }

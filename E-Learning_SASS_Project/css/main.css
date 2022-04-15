@@ -38,6 +38,15 @@ body {
   top: 35%;
 }
 
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #fff;
+  color: #007791;
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus, .owl-carousel .owl-nav button.owl-next:focus {
+  outline: none;
+}
+
 .owl-carousel .owl-nav button.owl-prev {
   left: -30px;
 }
@@ -244,39 +253,57 @@ body {
   margin: auto;
 }
 
-.courses .courses__content .courses__left {
+.courses .courses__content .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.courses .courses__content .row .courses__left {
   background-color: rgba(20, 23, 28, 0.05);
   padding: 0 2rem;
   display: flex;
   align-items: center;
 }
 
-.courses .courses__content .courses__left h2 {
+.courses .courses__content .row .courses__left h2 {
   color: #29303b;
   font-size: 19px;
   font-weight: normal;
 }
 
-.courses .courses__content .courses__right #myTab {
+.courses .courses__content .row .courses__right #myTab {
   margin-bottom: 25px;
 }
 
-.courses .courses__content .courses__right #myTab .nav-link {
+.courses .courses__content .row .courses__right #myTab .nav-link {
   color: #29303b;
   font-size: 15px;
   font-weight: normal;
 }
 
-.courses .courses__content .courses__right #myTab .nav-link:hover {
+.courses .courses__content .row .courses__right #myTab .nav-link:hover {
   border: 1px solid transparent;
   color: #007791;
   font-size: 15px;
   font-weight: normal;
 }
 
-.courses .courses__content .courses__right #myTab .nav-link.active {
+.courses .courses__content .row .courses__right #myTab .nav-link.active {
   border: none;
   border-bottom: 5px solid #007791;
+}
+
+.viewing {
+  padding: 22px 0;
+}
+
+.viewing .viewing__content {
+  width: 90%;
+  margin: auto;
+}
+
+.viewing .viewing__content h5 {
+  font-size: 1.25rem;
 }
 
 .button--white {
