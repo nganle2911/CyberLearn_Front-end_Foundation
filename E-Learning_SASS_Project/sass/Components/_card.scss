@@ -45,3 +45,34 @@
         }
     }
 }
+
+.card--feedback {
+    height: 280px;
+
+    .card-body {
+        padding: 2rem;
+
+        .card__top {
+            display: flex;
+            margin-bottom: $margin-3;
+
+            .card__avarta {
+                margin-right: $margin-3;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+
+            .card__name {
+                margin-bottom: 0;
+            }
+        }
+
+        .card-text {
+            @include styleText($color-black-0, $font-size-0, $font-weight-0);
+        }
+    }
+}
