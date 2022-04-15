@@ -1,0 +1,47 @@
+.card {
+    height: 312px;
+
+    .card-body {
+        padding: 1rem;
+
+        .card-title {
+            @include styleText($color-black-0, $font-size-0, $font-weight-1);
+        }
+
+        .card-text {
+            @include styleText($color-grey-0, $font-size-1 - 1, $font-weight-0);
+            margin: $margin-0 0; 
+        }
+
+        .card__stars {
+
+            i {
+                @include styleText($color-yellow-0, $font-size-1 - 1, $font-weight-3);
+            }
+
+            .card__rate {
+                @include styleText($color-grey-0, $font-size-1, $font-weight-1);
+            }
+
+            .card__total {
+                @include styleText($color-grey-0, $font-size-1, $font-weight-0);
+            }
+        }
+
+        .card__price {
+            text-align: right;
+            padding: $padding-0 - 2 0;
+
+            span {
+                &:first-child {
+                    @include styleText($color-grey-0, $font-size-1, $font-weight-0);
+                    text-decoration: line-through;
+                }
+
+                &:last-child {
+                    @include styleText($color-black-0, $font-size-0, $font-weight-1);
+                }
+            }
+        }
+    }
+}
