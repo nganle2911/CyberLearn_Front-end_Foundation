@@ -387,6 +387,27 @@ body {
   justify-content: space-between;
 }
 
+.jobs {
+  background-color: #F7F8FA;
+}
+
+.jobs .jobs__content .row {
+  padding: 10px 0;
+}
+
+.jobs .jobs__content .row .jobs__item {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.jobs .jobs__content .row .jobs__item h2 {
+  color: #505763;
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
