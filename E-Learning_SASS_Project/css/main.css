@@ -368,6 +368,25 @@ body {
   margin-bottom: 20px;
 }
 
+.partners {
+  background-color: #F7F8FA;
+  padding: 20px 0;
+}
+
+.partners .partners__content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.partners .partners__content .partners__text {
+  text-align: center;
+}
+
+.partners .partners__content .partners__imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
