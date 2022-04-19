@@ -29,8 +29,14 @@
 
 <!-- HEADER -->
 <header>
-    <nav class="myNavbar navbar navbar-expand-lg navbar-light">
-        <div class="col-7 myNavbar__col">
+    <nav class="myNavbar navbar navbar-expand-md navbar-light">
+        <div class="d-md-none col-3 col-sm-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="col-6 col-sm-8 col-md-8 col-lg-9 col-xl-7 myNavbar__col">
             <div class="myNavbar__left">
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo-coral.svg" alt="logo-black">
@@ -51,17 +57,17 @@
                 </form>
             </div>
         </div>
-        <div class="col-5">
+        <div class="col-3 col-sm-2 col-md-4 col-lg-3 col-xl-5 myNavBar--reser">
             <div class="myNavbar__right">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <li class="nav-item business">
                         <a class="nav-link" href="#">Udemy for Business</a>
                         <div class="overlay">
                             <p>Get your team access to Udemy's top 2,500 courses anytime, anywhere.</p>
                             <a href="#">Try Udemy for Business</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item instructor">
                         <a class="nav-link" href="#">Become an Instructor</a>
                         <div class="overlay">
                             <p>Get your team access to Udemy's top 2,500 courses anytime, anywhere.</p>
@@ -78,9 +84,6 @@
                 </ul>
             </div>
         </div>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button> -->
     </nav>
 </header>
 
