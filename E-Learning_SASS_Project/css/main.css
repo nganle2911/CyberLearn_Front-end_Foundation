@@ -365,6 +365,18 @@ footer .footer__bottom .nav-link {
   font-weight: normal;
 }
 
+@media screen and (max-width: 1200px) {
+  .intro .intro__content .intro__item .intro__icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    display: none;
+  }
+}
+
 .courses {
   margin: 25px 0;
 }
@@ -646,6 +658,13 @@ footer .footer__bottom .nav-link {
 .cover .cover__content .cover__form .input-group .input-group-append .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
+}
+
+@media screen and (max-width: 576px) {
+  .cover .cover__content {
+    max-width: 400px;
+    left: 10%;
+  }
 }
 
 .card {

@@ -32,4 +32,20 @@
             }
         }
     }
+
+    // *****************************************************
+    // RESPONSIVE
+    @include responsive("extra-large") {
+        .intro__content {
+            .intro__item {
+                .intro__icon {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        display: none;
+    }
 }
