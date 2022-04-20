@@ -17,4 +17,11 @@
             }
         }
     }
+
+    // RESPONSIVE
+    @include responsive("medium") {
+        .border-right {
+            border: none !important;
+        }
+    }
 }

@@ -15,4 +15,34 @@
             justify-content: space-between;
         }
     }
+
+    // ******************************************************
+    // RESPONSIVE
+    @include responsive("extra-large") {
+        .partners__content {
+            width: 80%;
+        }
+    }
+
+    @include responsive("large") {
+        .partners__content {
+            width: 90%;
+        }
+    }
+
+    @include responsive("medium") {
+        .partners__content {
+            width: 60%;
+
+            .partners__imgs {
+                flex-wrap: wrap;
+        
+                .partners__item {
+                    width: 50%;
+                    text-align: center;
+                    margin-bottom: $margin-0 + 5;
+                }
+            }
+        }
+    }
 }
