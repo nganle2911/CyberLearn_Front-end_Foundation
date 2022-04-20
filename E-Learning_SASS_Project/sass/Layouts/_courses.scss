@@ -41,7 +41,28 @@
                 }
             }
         }
+    }
 
-       
+    // ***********************************************************
+    // RESPONSIVE
+    @include responsive("screen-1") {
+        .card {
+            .card-body {
+                .card-title {
+                    @include styleText($color-black-0, $font-size-1, $font-weight-1);
+                    margin-bottom: $margin-0 + 5;
+                }
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        .courses__content {
+            .row {
+                .courses__left {
+                    padding: $padding-3;
+                }
+            }
+        }
     }
 }

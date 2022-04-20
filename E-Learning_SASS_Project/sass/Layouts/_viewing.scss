@@ -9,4 +9,17 @@
             font-size: 1.25rem;
         }
     }
+
+    @include responsive("screen-1") {
+        .viewing__content {
+            .card {
+                .card-body {
+                    .card-title {
+                        @include styleText($color-black-0, $font-size-1, $font-weight-1);
+                        margin-bottom: $margin-0 + 5;
+                    }
+                }
+            }
+        }
+    }
 }
