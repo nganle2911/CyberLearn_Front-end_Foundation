@@ -597,6 +597,71 @@ footer .footer__bottom .nav-link {
   }
 }
 
+.sidebarMini {
+  position: fixed;
+  z-index: 10;
+  top: 25%;
+  right: 0;
+  width: 400px;
+  background-color: #dedfe0;
+}
+
+.sidebarMini .sidebarMini__button {
+  color: #29303b;
+  background-color: #dedfe0;
+  border: 1px solid #dedfe0;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+  position: fixed;
+  transform: translateX(-100%);
+}
+
+.sidebarMini .sidebarMini__content {
+  width: 150px;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebarMini .sidebarMini__content h2 {
+  font-size: 15px;
+}
+
+.sidebarMini .sidebarMini__content .switch {
+  width: 50px;
+  height: 25px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.sidebarMini .sidebarMini__content .switch input {
+  display: none;
+}
+
+.sidebarMini .sidebarMini__content .switch .slider {
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 34px;
+}
+
+.sidebarMini .sidebarMini__content .switch .slider::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
