@@ -43,7 +43,7 @@
 
         .myNavbar__form-search {
             flex-grow: 8;
-            @include styleFormSearch($color-white-cream, $color-white-0, $color-grey-4);
+            @include styleFormSearch($color-white-cream, $color-white-0, $color-grey-4, $color-black-light);
         }
     }
 

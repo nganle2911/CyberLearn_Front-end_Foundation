@@ -27,7 +27,7 @@
     border: 1px solid $border-color-hover;
 }
 
-@mixin styleFormSearch($bg-color, $bg-color-focus, $border-color) {
+@mixin styleFormSearch($bg-color, $bg-color-focus, $border-color, $color) {
     .input-group {
         background-color: $bg-color;
 
@@ -36,9 +36,10 @@
             border-color: transparent;
             box-shadow: none;
             transition: none;
+            color: $color;
 
             &::placeholder {
-                color: $color-black-light;
+                color: $color;
             }
 
             &:focus {
