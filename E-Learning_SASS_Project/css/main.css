@@ -604,6 +604,9 @@ footer .footer__bottom .nav-link {
   right: 0;
   width: 400px;
   background-color: #dedfe0;
+  transform: translateX(100%);
+  transition: .5s;
+  border-left: 1px solid #dedfe0;
 }
 
 .sidebarMini .sidebarMini__button {
@@ -617,6 +620,11 @@ footer .footer__bottom .nav-link {
   border-radius: 8px 0 0 8px;
   position: fixed;
   transform: translateX(-100%);
+  transition: .5s;
+}
+
+.sidebarMini .sidebarMini__button:focus {
+  outline: none;
 }
 
 .sidebarMini .sidebarMini__content {
@@ -640,6 +648,10 @@ footer .footer__bottom .nav-link {
   display: none;
 }
 
+.sidebarMini .sidebarMini__content .switch input:checked + .slider::before {
+  transform: translateX(15px);
+}
+
 .sidebarMini .sidebarMini__content .switch .slider {
   background-color: #ccc;
   position: absolute;
@@ -648,6 +660,7 @@ footer .footer__bottom .nav-link {
   left: 0;
   bottom: 0;
   border-radius: 34px;
+  cursor: pointer;
 }
 
 .sidebarMini .sidebarMini__content .switch .slider::before {
@@ -660,6 +673,11 @@ footer .footer__bottom .nav-link {
   position: absolute;
   bottom: 4px;
   left: 4px;
+  transition: 0.5s;
+}
+
+.sidebarMini.is-opened {
+  transform: translateX(60%);
 }
 
 .button--white {
@@ -878,5 +896,22 @@ footer .footer__bottom .nav-link {
   color: #29303b;
   font-size: 15px;
   font-weight: normal;
+}
+
+.darkMode .sidebarMini {
+  background-color: #152e4d;
+  color: #fff;
+  border-left-color: #152e4d;
+}
+
+.darkMode .sidebarMini .sidebarMini__button {
+  background-color: #152e4d;
+  border-color: #152e4d;
+  color: #fff;
+}
+
+.darkMode .sidebarMini .sidebarMini__content .switch .slider {
+  background-color: #061325;
+  box-shadow: 0 0 2px 3px #344050;
 }
 /*# sourceMappingURL=main.css.map */
