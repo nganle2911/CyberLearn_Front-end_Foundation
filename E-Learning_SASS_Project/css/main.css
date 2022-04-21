@@ -78,6 +78,14 @@ body {
   width: 110px;
 }
 
+.myNavbar .myNavbar__left .navbar-brand .logo-black {
+  display: inline-block;
+}
+
+.myNavbar .myNavbar__left .navbar-brand .logo-white {
+  display: none;
+}
+
 .myNavbar .myNavbar__left .myNavbar__categories {
   flex-grow: 1;
   text-align: center;
@@ -913,5 +921,30 @@ footer .footer__bottom .nav-link {
 .darkMode .sidebarMini .sidebarMini__content .switch .slider {
   background-color: #061325;
   box-shadow: 0 0 2px 3px #344050;
+}
+
+body.darkMode {
+  color: #9da9bb;
+  background-color: #061325;
+}
+
+.darkMode .myNavbar {
+  background-color: #0e1c2f;
+}
+
+.darkMode .myNavbar .myNavbar__left .navbar-brand .logo-black {
+  display: none;
+}
+
+.darkMode .myNavbar .myNavbar__left .navbar-brand .logo-white {
+  display: inline-block;
+}
+
+.darkMode .myNavbar .myNavbar__left .myNavbar__categories {
+  color: #9da9bb;
+}
+
+.darkMode .myNavbar .myNavbar__left .myNavbar__categories i {
+  color: #d8d2ef;
 }
 /*# sourceMappingURL=main.css.map */
