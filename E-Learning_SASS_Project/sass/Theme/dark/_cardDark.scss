@@ -34,4 +34,16 @@
             }
         }
     }
+
+    .card--feedback {
+        background-color: $color-dark-4;
+        
+        .card-body {
+            .card__top {
+                .card__name {
+                    color: $color-dark-5;
+                }
+            }
+        }
+    }
 }

@@ -53,6 +53,14 @@ footer {
             margin-right: $margin-3 - 5;
         }
 
+        .logo-black {
+            display: inline-block;
+        }
+
+        .logo-white {
+            display: none;
+        }
+
         .nav-link {
             @include styleText($color-blue-0, $font-size-1, $font-weight-0);
         }

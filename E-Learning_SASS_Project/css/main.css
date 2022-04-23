@@ -331,6 +331,14 @@ footer .footer__bottom img {
   margin-right: 10px;
 }
 
+footer .footer__bottom .logo-black {
+  display: inline-block;
+}
+
+footer .footer__bottom .logo-white {
+  display: none;
+}
+
 footer .footer__bottom .nav-link {
   color: #007791;
   font-size: 13px;
@@ -1035,6 +1043,28 @@ body.darkMode {
   border: 1px solid #344050;
 }
 
+.darkMode .button--red:hover {
+  color: #fff;
+  background-color: #e63757;
+  border: 1px solid #e63757;
+}
+
+.darkMode .button--dropup {
+  color: #d8d2ef;
+  background-color: #152e4d;
+  border: 1px solid #344050;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.darkMode .button--dropup:hover {
+  color: #d8d2ef;
+  background-color: #132238;
+  border: 1px solid #344050;
+}
+
 .darkMode .courses .courses__content .courses__left {
   background-color: #132238;
 }
@@ -1088,6 +1118,14 @@ body.darkMode {
   color: #d8d2ef;
 }
 
+.darkMode .card--feedback {
+  background-color: #0e1c2f;
+}
+
+.darkMode .card--feedback .card-body .card__top .card__name {
+  color: #d8d2ef;
+}
+
 .darkMode .categories .categories__content h2 {
   color: #d8d2ef;
 }
@@ -1100,5 +1138,66 @@ body.darkMode {
 
 .darkMode .categories .categories__content .row .categories__item:hover {
   box-shadow: 0 0 3px 2px #152e4d;
+}
+
+.darkMode .students {
+  background-color: #132238;
+}
+
+.darkMode .students .students__content h2 {
+  color: #d8d2ef;
+}
+
+.darkMode .partners {
+  background-color: #132238;
+}
+
+.darkMode .jobs {
+  background-color: #132238;
+}
+
+.darkMode .jobs .jobs__content .border-right {
+  border-right: 1px solid #344050 !important;
+}
+
+.darkMode .jobs .jobs__content .jobs__item h2 {
+  color: #d8d2ef;
+}
+
+.darkMode footer .footer__top ul .nav-item .nav-link {
+  color: #d8d2ef;
+}
+
+.darkMode footer .footer__top .btn-group .dropdown-menu {
+  background-color: #132238;
+  border-color: #344050;
+}
+
+.darkMode footer .footer__top .btn-group .dropdown-menu .dropdown-item {
+  color: #d8d2ef;
+}
+
+.darkMode footer .footer__top .btn-group .dropdown-menu .dropdown-item:hover {
+  background-color: #152e4d;
+}
+
+.darkMode footer hr {
+  background-color: #344050;
+}
+
+.darkMode footer .footer__bottom {
+  color: #9da9bb;
+}
+
+.darkMode footer .footer__bottom .logo-black {
+  display: none;
+}
+
+.darkMode footer .footer__bottom .logo-white {
+  display: inline-block;
+}
+
+.darkMode footer .footer__bottom .nav-link {
+  color: #d8d2ef;
 }
 /*# sourceMappingURL=main.css.map */
