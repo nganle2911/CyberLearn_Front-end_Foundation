@@ -1034,4 +1034,71 @@ body.darkMode {
   background-color: #152e4d;
   border: 1px solid #344050;
 }
+
+.darkMode .courses .courses__content .courses__left {
+  background-color: #132238;
+}
+
+.darkMode .courses .courses__content .courses__left h2 {
+  color: #d8d2ef;
+}
+
+.darkMode .courses .courses__content .courses__right #myTab .nav-link {
+  color: #9da9bb;
+}
+
+.darkMode .courses .courses__content .courses__right #myTab .nav-link.active {
+  background-color: transparent;
+}
+
+.darkMode .courses .courses__content .courses__right #myTab .nav-link:hover {
+  color: #d8d2ef;
+}
+
+.darkMode .courses .courses__content .courses__right .nav-tabs {
+  border-bottom: 1px solid #344050;
+}
+
+.darkMode .card {
+  background-color: #152e4d;
+  border: 1px solid #344050;
+}
+
+.darkMode .card .card-body .card-title {
+  color: #d8d2ef;
+}
+
+.darkMode .card .card-body .card-text {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__stars .card__rate {
+  color: #d8d2ef;
+}
+
+.darkMode .card .card-body .card__stars .card__total {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__price span:first-child {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__price span:last-child {
+  color: #d8d2ef;
+}
+
+.darkMode .categories .categories__content h2 {
+  color: #d8d2ef;
+}
+
+.darkMode .categories .categories__content .row .categories__item {
+  background-color: #132238;
+  border-color: #344050;
+  box-shadow: 0 3px 1px 0 #152e4d;
+}
+
+.darkMode .categories .categories__content .row .categories__item:hover {
+  box-shadow: 0 0 3px 2px #152e4d;
+}
 /*# sourceMappingURL=main.css.map */
