@@ -1,10 +1,10 @@
 /**
- * todo: B1: Hiển thị danh sách kính : _Glasses, _GlassesList
- * todo: B2: Xây dựng chức năng thử kính
- * todo: B3: Xây dựng chức năng so sánh 
+ * todo: B1: Display glasses list : _Glasses, _GlassesList
+ * todo: B2: Build glasses test function 
+ * todo: B3: Build compare function 
  */
 
-// *Dữ liệu kính 
+// *Glasses data   
 let dataGlasses = [
     { id: "G1", src: "./img/g1.jpg", virtualImg: "./img/v1.png", brand: "Armani Exchange", name: "Bamboo wood", color: "Brown", price: 150, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? " },
     { id: "G2", src: "./img/g2.jpg", virtualImg: "./img/v2.png", brand: "Arnette", name: "American flag", color: "American flag", price: 150, description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In assumenda earum eaque doloremque, tempore distinctio." },
@@ -23,7 +23,7 @@ import {GlassesList} from "./glassesList.js";
 
 let glassesList = new GlassesList();
 
-// *Hàm rút gọn cú pháp lấy elementById 
+// *Syntax shortening function to getElementById  
 const getEle = (id) => {
     return document.getElementById(id);
 }
@@ -36,14 +36,60 @@ const showGlassesList = () => {
     // Create glasses object and add glasses in glassesList 
     // Check data array dataGlasses
     dataGlasses.map((item, index) => {
-        let gl = new Glasses(item.id, item.src, item.virtualImg, item.brand, item.name, item.color, item.description);
+        let gl = new Glasses(item.id, item.src, item.virtualImg, item.brand, item.name, item.color, item.price, item.description);
         
         glassesList.addGlasses(gl);
     });
 
-    console.log(glassesList.glist);
-
+    // console.log(glassesList.glist);
+    divGlassesList.innerHTML = glassesList.renderGlasses(); 
 }
 
 // Call function 
 showGlassesList(); 
+
+const tryOnGlasses = (event) => {
+    // console.log(event);
+    let gID = event.target.getAttribute("data-id");
+    let gObject = {}; 
+    // value is a glass object in glist
+    for (let value of glassesList.glist) {
+        if (value.id == gID) {
+            gObject = value;
+        }
+    }
+    // console.log(gObject);
+    showInfo(gObject);
+}
+
+window.tryOnGlasses = tryOnGlasses;
+
+// Declare function
+const showInfo = (gObject) => {
+    let divAvatar = getEle("avatar");
+    let divInfo = getEle("glassesInfo");
+    
+    divAvatar.innerHTML = `
+        <img src="${gObject.virtualImg}">
+    `;
+
+    let status = ""; 
+    if (gObject.status) {
+        status = "Stocking";
+    } else {
+        status = "Sold out";
+    }
+
+    divInfo.innerHTML = `
+        <h5>${gObject.name} - ${gObject.brand} (${gObject.color})</h5>
+        <p class="card-text">
+            <span class="btn btn-danger btn-sm mr-2">$${gObject.price}</span>
+            <span class="text-success">${status}</span>
+        </p>
+        <p class="card-text">
+            ${gObject.description}
+        </p>
+    `;
+
+    divInfo.style.display = "block";
+}
