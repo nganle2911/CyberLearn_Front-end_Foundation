@@ -70,7 +70,7 @@ const showInfo = (gObject) => {
     let divInfo = getEle("glassesInfo");
     
     divAvatar.innerHTML = `
-        <img src="${gObject.virtualImg}">
+        <img id="glasses" src="${gObject.virtualImg}">
     `;
 
     let status = ""; 
@@ -93,3 +93,27 @@ const showInfo = (gObject) => {
 
     divInfo.style.display = "block";
 }
+
+/**
+ * *Before: remove glasses
+ * *After: put glasses on 
+ */
+
+const removeGlasses = (isDisplay) => {
+    let glasses = getEle("glasses"); 
+
+    if (glasses != null) {
+        if (isDisplay) {
+            // glasses.style.display = "block";
+            glasses.style.opacity = 0.9;
+        } else {
+            // glasses.style.display = "none";
+            glasses.style.opacity = 0;
+        }
+    } else {
+        console.log("You don't add any glasses yet!");
+    }
+
+}
+
+window.removeGlasses = removeGlasses;
