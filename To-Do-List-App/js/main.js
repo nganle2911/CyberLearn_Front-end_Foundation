@@ -40,11 +40,22 @@ const showCompletedList = (ulCompleted) => {
 
 // todo: Function removes todo
 const deleteToDo = (e) => {
-    let tdIndex = e.target.getAttribute("data-index");
+    let tdIndex = e.currentTarget.getAttribute("data-index");
+    let status = e.currentTarget.getAttribute("data-status");
     let ulToDo = getELE("todo");
+    let ulCompleted = getELE("completed");
+    // console.log(status);
 
-    toDoList.removeToDo(tdIndex);
-    showToDoList(ulToDo);
+    if (status == "todo") {
+        toDoList.removeToDo(tdIndex);
+        showToDoList(ulToDo);
+    } else if (status == "completed") {
+        completedList.removeToDo(tdIndex);
+        showCompletedList(ulCompleted);
+    } else {
+        alert("Cannot delete todo!");
+    }
+    
 }
 
 window.deleteToDo = deleteToDo;
@@ -69,6 +80,14 @@ const completedToDo = (e) => {
         // console.log(completedList.tdList);
         showToDoList(ulToDo);
         showCompletedList(ulCompleted);
+    } else if (status == "completed") {
+        let undoItem = completedList.tdList.slice(tdIndex, tdIndex+1);
+        let objToDo = new ToDo(undoItem[0].textToDo, "todo");
+        moveToDo(completedList, toDoList, objToDo, tdIndex);
+        showToDoList(ulToDo);
+        showCompletedList(ulCompleted);
+    } else {
+        alert("Cannot move todo!");
     }
 }
 
@@ -81,3 +100,19 @@ const moveToDo = (depart, arrival, obj, tdIndex) => {
     // *Add this todo to arrival 
     arrival.addToDo(obj);
 }
+
+const sortASC = () => {
+    let ulTodo = getELE("todo");
+    toDoList.sortToDoList(false);
+    showToDoList(ulTodo);
+}
+
+window.sortASC = sortASC;
+
+const sortDES = () => {
+    let ulTodo = getELE("todo");
+    toDoList.sortToDoList(true);
+    showToDoList(ulTodo);
+}
+
+window.sortDES = sortDES;

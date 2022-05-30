@@ -20,7 +20,7 @@ export class ToDoList {
                 <li>
                     <span>${item.textToDo}</span>
                     <div class="buttons">
-                        <button class="remove" data-index="${index}" onclick="deleteToDo(event)">
+                        <button class="remove" data-index="${index}" data-status="${item.status}" onclick="deleteToDo(event)">
                             <i class="fa fa-trash-alt"></i>
                         </button>
                         <button class="completed" data-index="${index}" data-status="${item.status}" onclick="completedToDo(event)">
@@ -34,5 +34,19 @@ export class ToDoList {
         }, '');
 
         return content;
+    }
+
+    sortToDoList(isDES) {
+        this.tdList.sort((toDo, nextToDo) => {
+            const textA = toDo.textToDo.toLowerCase();
+            const textB = nextToDo.textToDo.toLowerCase();
+
+            // localCompare() - arrange in ascending (by default)
+            return textB.localeCompare(textA);
+        });
+
+        if (isDES) {
+            this.tdList.reverse();
+        }
     }
 }
