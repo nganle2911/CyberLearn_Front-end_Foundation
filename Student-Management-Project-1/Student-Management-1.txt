@@ -1,3 +1,2 @@
-1/ Xây dựng giao diện cho ứng dụng 
- - Bố cục layout cho html 
-	
+1/ Build the interface for the application
+    - Layout for HTML 
