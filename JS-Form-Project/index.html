@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+
+    <!-- AJAX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">REGISTRATION FORM</h1>
+        <div class="row">
+            <form class="col s6" id="myForm" novalidate>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="Last Name" id="lastName">
+                        <span id="error_lastName" class="helper-text text-danger"></span>
+                        <span id="error_lastName_all_letter" class="helper-text text-danger"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="First Name" id="firstName">
+                        <span id="error_firstName" class="helper-text text-danger"></span>
+                        <span id="error_firstName_all_letter" class="helper-text text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="password">Password</label>
+                        <input type="password" name="Password" id="password" minlength="6" maxlength="32" />
+                        <span 
+                            id="error_password" class="helper-text text-danger"></span>
+                        <span id="error_password_min_max_length" class="helper-text text-danger"></span>
+                        <span id="error_password_min_max_value" class="helper-text text-danger"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="Confirm Password" id="confirmPassword" />
+                        <span id="error_confirmPassword" class="helper-text text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="Phone" id="phone" />
+                        <span id="error_phone" class="helper-text text-danger"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email" />
+                        <span id="error_email" class="helper-text text-danger"></span>
+                    </div>
+                </div>
+                <button id="btnRegister" class="btn waves-effect waves-light" type="submit">REGISTER NOW</button>
+            </form>
+            <div class="col s6">
+                <img src="https://cdn.pixabay.com/photo/2020/08/16/11/23/book-5492517_960_720.jpg"
+                    style="width: 100%; border-radius: 6px; opacity: 0.85;">
+            </div>
+        </div>
+    </div>
+
+    <!-- AJAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
